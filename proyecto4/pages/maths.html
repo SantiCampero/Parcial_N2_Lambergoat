@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMAS</title>
+    <link rel="stylesheet" href="../style/maths.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#" class="logo animate-logo">MatePage</a>
+                <ul>
+                    <li><a href="../pages/login.html" class="botonLogin">👤 INICIAR SESION</a></li>
+                    <li><a href="#">ANUNCIO</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">MENU</a>
+                        <ul class="submenu">
+                            <li><a href="../pages/maths.html" class="submenu-item">MATHS</a></li>
+                            <li><a href="../pages/estadistica.html" class="submenu-item">STATICS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Calculadora (solo suma)</h1>
+        <div class="container">
+            <input type="number" id="numero1" placeholder="Número 1">
+            
+            <input type="number" id="numero2" placeholder="Número 2">
+            <button onclick="calcular()" class="boton-calcular">Calcular</button>
+            <input type="number" id="resultado" readonly placeholder="Resultado">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/maths.js"></script>
+</body>
+</html>

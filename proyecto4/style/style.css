@@ -1,0 +1,135 @@
+body {
+    background-color: darkslateblue;
+    margin: 0;
+}
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-logo {
+    display: inline-block;
+    animation: logoAnimation 2s ease-in-out infinite;
+}
+
+.animate-logo:hover {
+    animation-play-state: paused;
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0;
+    padding: 0.4%;
+    background-color:rgb(100, 12, 0);
+    position:relative;
+    left: 0;
+    right: 0;
+    color: white;
+  }
+.navbar .logo {
+    padding: 1%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+li {
+    float:right;
+    list-style-type: none;
+}
+li a {
+    list-style-type: none;
+    display: block;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s;
+    text-align: center;
+    padding: 29px 30px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #2b0a0a;
+    min-width: 190px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+ul .submenu {
+    padding: 0%;
+    margin: 0;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+
+.submenu li {
+    margin-right: 1px;
+    padding: 0;
+}
+
+.submenu-item {
+    margin: 0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu-item:hover {
+    background-color: #691e1ecd;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 45px;
+    margin-top: 120px;
+}
+
+.main-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.big-button {
+    padding: 2rem 4rem;
+    background-color: #af4c4c; /* Puedes cambiar el color */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.big-button:hover {
+    transform: scale(1.1);
+    background-color: #863333;
+}

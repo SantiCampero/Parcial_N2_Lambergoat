@@ -1,0 +1,147 @@
+body {
+    background-color: darkslateblue;
+    margin: 0;
+}
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-logo {
+    display: inline-block;
+    animation: logoAnimation 2s ease-in-out infinite;
+}
+
+.animate-logo:hover {
+    animation-play-state: paused;
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0;
+    padding: 0.4%;
+    background-color:rgb(100, 12, 0);
+    position:relative;
+    left: 0;
+    right: 0;
+    color: white;
+    
+  }
+.navbar .logo {
+    padding: 1%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+li {
+    float:right;
+    list-style-type: none;
+}
+li a {
+    list-style-type: none;
+    display: block;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s;
+    text-align: center;
+    padding: 29px 30px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #2b0a0a;
+    min-width: 190px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+ul .submenu {
+    padding: 0%;
+    margin: 0;
+}
+
+
+li:hover .submenu {
+    display: block;
+}
+
+
+.submenu li {
+    margin-right: 1px;
+   
+    padding: 0;
+}
+
+.submenu-item {
+    margin: 0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.submenu-item:hover {
+    background-color: #691e1ecd;
+}
+
+
+.navbar ul li {
+    position: relative;
+}
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 140px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+input {
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 19px;
+}
+.boton-calcular {
+    padding: 10px 20px;
+    background-color: rgba(168, 93, 234, 0.526);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.boton-calcular:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}

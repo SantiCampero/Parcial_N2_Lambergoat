@@ -1,0 +1,156 @@
+body {
+    background-color: darkslateblue;
+    margin: 0;
+}
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-logo {
+    display: inline-block;
+    animation: logoAnimation 2s ease-in-out infinite;
+}
+
+.animate-logo:hover {
+    animation-play-state: paused;
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0;
+    padding: 0.4%;
+    background-color:rgb(100, 12, 0);
+    position:relative;
+    left: 0;
+    right: 0;
+    color: white;
+  }
+.navbar .logo {
+    padding: 1%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+li {
+    float:right;
+    list-style-type: none;
+}
+li a {
+    list-style-type: none;
+    display: block;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s;
+    text-align: center;
+    padding: 29px 30px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #2b0a0a;
+    min-width: 190px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+ul .submenu {
+    padding: 0%;
+    margin: 0;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+
+.submenu li {
+    margin-right: 1px;
+    padding: 0;
+}
+
+.submenu-item {
+    margin: 0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu-item:hover {
+    background-color: #691e1ecd;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(148, 87, 202, 0.307);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.text {
+    color: white;
+    font-size: 20px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
